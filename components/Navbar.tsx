@@ -1,31 +1,46 @@
 "use client";
 
 import Link from "next/link";
-import { useTheme } from "next-themes";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 export default function Navbar() {
-  const { theme, setTheme } = useTheme();
-  const [mounted, setMounted] = useState(false);
+  const [open, setOpen] = useState(false);
 
-  useEffect(() => setMounted(true), []);
-  if (!mounted) return null;
+  const links = [
+    { href: "#home", label: "Home" },
+    { href: "#about", label: "About" },
+    { href: "#contact", label: "Contact" },
+    { href: "/projects", label: "Projects" },
+  ];
 
   return (
-    <nav className="flex justify-between items-center px-8 py-4 bg-gray-900 text-white">
-      <Link href="/" className="text-xl font-bold">
-        My Portfolio
-      </Link>
-      <div className="flex items-center space-x-6">
-        <Link href="/about" className="hover:text-purple-400">About</Link>
-        <Link href="/skills" className="hover:text-purple-400">Skills</Link>
-        <Link href="/contact" className="hover:text-purple-400">Contact</Link>
+    <nav className="fixed top-0 left-0 w-full bg-white/80 backdrop-blur-md border-b border-gray-200 z-50">
+      <div className="max-w-6xl mx-auto flex justify-between items-center px-6 py-3">
+        <h1 className="text-2xl font-serif font-bold text-black">
+          Samuel<span className="text-gold">.</span>
+        </h1>
         <button
-          onClick={() => setTheme(theme === "light" ? "dark" : "light")}
-          className="border px-2 py-1 rounded text-sm"
+          className="md:hidden text-black"
+          onClick={() => setOpen(!open)}
         >
-          {theme === "light" ? "Dark" : "Light"}
+          ☰
         </button>
+        <div
+          className={`${
+            open ? "flex" : "hidden"
+          } md:flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 text-black text-sm`}
+        >
+          {links.map(({ href, label }) => (
+            <Link
+              key={href}
+              href={href}
+              className="hover:text-gold transition-colors"
+              onClick={() => setOpen(false)}
+            >
+              {label}
+            </Link>
+          ))}
+        </div>
       </div>
     </nav>
   );
