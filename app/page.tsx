@@ -36,7 +36,7 @@ export default function Home() {
           <div className="flex gap-4 mt-4">
             <a href="#projects" className="button">View Projects</a>
             <a
-              href="mailto:samuel@example.com"
+              href="samueloluwaseun989@gmail.com"
               className="border border-neutral-700 px-6 py-3 rounded-full hover:bg-neutral-800 transition-all"
             >
               Contact Me
@@ -61,7 +61,7 @@ export default function Home() {
           transition={{ delay: 0.2, duration: 1 }}
           className="text-neutral-400 leading-relaxed text-base"
         >
-          I’m a creative technologist, data analyst, writer, and developer who enjoys taking on one random, interesting idea at a time. This website being one of them. I use Excel and SQL for data analysis, Django and React for software development, and a mix of design tools to bring concepts to life. When I’m not coding or analyzing data, you can find me making notes about my experiences, or experimenting with design.
+          I’m a creative technologist, data analyst, writer, and developer who enjoys taking on one random, interesting idea at a time. This website being one of them. I use Excel and SQL for data analysis, Django and React for software development, and a mix of design tools to bring concepts to life. When I’m not coding or analyzing data, I am making notes about my experiences, creating stories from them.
         </motion.p>
       </section>
 
