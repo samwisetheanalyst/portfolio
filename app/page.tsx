@@ -81,12 +81,12 @@ export default function Home() {
             {
               title: "kéde: A Notification System, and social app",
               desc: "A Django + React Native app for academic updates and community discussions with real-time push notifications.",
-              link: "https://github.com/samwisetheanalyst/k-de",
+              link: "github.com/samwisetheanalyst/k-de",
             },
             {
               title: "E-commerce Platform",
               desc: "A fashion-forward Nigerian e-store built with Next.js and integrated with local payments and admin dashboards.",
-              link: "https://github.com/samuel/clothing-store",
+              link: "github.com/samuel/clothing-store",
             },
             {
               title: "Portfolio Website",
