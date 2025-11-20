@@ -79,9 +79,9 @@ export default function Home() {
         <div className="grid md:grid-cols-2 gap-8">
           {[
             {
-              title: "Notification System",
+              title: "kéde: A Notification System, and social app",
               desc: "A Django + React Native app for academic updates and community discussions with real-time push notifications.",
-              link: "https://github.com/samuel/notification-system",
+              link: "https://https://github.com/samwisetheanalyst/k-de",
             },
             {
               title: "E-commerce Platform",
