@@ -81,7 +81,7 @@ export default function Home() {
             {
               title: "kéde: A Notification System, and social app",
               desc: "A Django + React Native app for academic updates and community discussions with real-time push notifications.",
-              link: "https://https://github.com/samwisetheanalyst/k-de",
+              link: "https://github.com/samwisetheanalyst/k-de",
             },
             {
               title: "E-commerce Platform",
