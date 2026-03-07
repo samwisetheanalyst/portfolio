@@ -36,7 +36,7 @@ export default function Home() {
           <div className="flex gap-4 mt-4">
             <a href="#projects" className="button">View Projects</a>
             <a
-              href="samueloluwaseun989@gmail.com"
+              href="#contact"
               className="border border-neutral-700 px-6 py-3 rounded-full hover:bg-neutral-800 transition-all"
             >
               Contact Me
