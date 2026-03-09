@@ -26,7 +26,7 @@ export default function Home() {
 
           <div>
             <h1 className="text-5xl md:text-6xl font-serif italic tracking-tight">
-              Hello, I?m Samuel
+              Hello, I'm Samuel
             </h1>
             <p className="text-neutral-400 mt-4 max-w-md mx-auto text-base leading-relaxed">
               A data analyst, and developer blending logic and design to craft digital experiences that feel alive.
@@ -43,7 +43,7 @@ export default function Home() {
             </a>
           </div>
           <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-neutral-400">
-            <span>Data Analyst ? Full-Stack Developer</span>
+            <span>Data Analyst | Full-Stack Developer</span>
             <span>5+ Projects Delivered</span>
             <span>2+ Years Building</span>
           </div>
@@ -66,7 +66,7 @@ export default function Home() {
           transition={{ delay: 0.2, duration: 1 }}
           className="text-neutral-400 leading-relaxed text-base"
         >
-          I?m a creative technologist, data analyst, writer, and developer who enjoys taking on one random, interesting idea at a time. This website being one of them. I use Excel and SQL for data analysis, Django and React for software development, and a mix of design tools to bring concepts to life. When I?m not coding or analyzing data, I am making notes about my experiences, creating stories from them.
+          I'm a creative technologist, data analyst, writer, and developer who enjoys taking on one random, interesting idea at a time, with this website being one of them. I use Excel and SQL for data analysis, Django and React for software and web development, and a mix of design tools to bring concepts to life. When I'm not coding or analyzing data, I am making notes about my experiences, creating stories from them.
         </motion.p>
       </section>
 
@@ -117,15 +117,11 @@ export default function Home() {
           {[
             {
               title: "Data",
-              items: ["Excel", "SQL", "Python", "Power BI", "Data Storytelling"],
+              items: ["Excel", "SQL"],
             },
             {
               title: "Development",
               items: ["Django", "React", "Next.js", "TypeScript", "REST APIs"],
-            },
-            {
-              title: "Design",
-              items: ["Figma", "TailwindCSS", "Framer Motion", "Wireframing", "Prototyping"],
             },
           ].map((group, i) => (
             <div key={i} className="card text-left">
@@ -153,16 +149,16 @@ export default function Home() {
         <div className="space-y-6">
           {[
             {
-              title: "Data Analyst ? Freelance",
-              date: "2023 ? Present",
+              title: "Data Analyst - Freelance",
+              date: "2023 - Present",
               points: [
                 "Built reporting dashboards for small teams and startups.",
                 "Cleaned and modeled datasets for weekly decision-making.",
               ],
             },
             {
-              title: "Full-Stack Developer ? Independent Projects",
-              date: "2022 ? Present",
+              title: "Full-Stack Developer - Independent Projects",
+              date: "2025 - Present",
               points: [
                 "Developed web apps with Next.js and Django.",
                 "Shipped responsive UI with consistent design language.",
@@ -211,7 +207,7 @@ export default function Home() {
             {
               title: "E-commerce Platform",
               desc: "A fashion-forward Nigerian e-store built with Next.js and integrated with local payments and admin dashboards.",
-              role: "Role: Frontend Developer",
+              role: "Role: Fullstack Developer",
               stack: "Stack: Next.js, TailwindCSS, Paystack",
               outcomes: [
                 "Implemented product catalog and cart experience.",
@@ -221,7 +217,7 @@ export default function Home() {
             },
             {
               title: "Portfolio Website",
-              desc: "This website ? designed with Next.js, TailwindCSS, and Framer Motion for smooth transitions and minimal beauty.",
+              desc: "This website, designed with Next.js, TailwindCSS, and Framer Motion for smooth transitions and minimal beauty.",
               role: "Role: Designer & Developer",
               stack: "Stack: Next.js, TailwindCSS, Framer Motion",
               outcomes: [
@@ -251,7 +247,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="text-sm font-medium hover:underline text-neutral-300"
               >
-                Visit Project ?
+                Visit Project
               </a>
             </motion.div>
           ))}
@@ -285,7 +281,7 @@ export default function Home() {
               <h3 className="text-xl font-semibold mb-2">{post.title}</h3>
               <p className="text-neutral-400 leading-relaxed mb-3">{post.desc}</p>
               <a href={post.link} className="text-sm font-medium hover:underline text-neutral-300">
-                Read more ?
+                Read more
               </a>
             </div>
           ))}
@@ -296,10 +292,10 @@ export default function Home() {
       <section id="contact" className="max-w-3xl text-center">
         <h2 className="text-3xl mb-6 border-b border-neutral-700 pb-2">Get In Touch</h2>
         <p className="text-neutral-400 mb-6">
-          Let?s collaborate on something meaningful ? whether it?s code, design, or innovation.
+          Let's collaborate on something meaningful, whether it's code, design, or innovation.
         </p>
         <div className="text-sm text-neutral-500 mb-6 space-y-1">
-          <p>Location: Lagos, Nigeria (UTC+1)</p>
+          <p>Location: Lagos, Nigeria (GMT+1)</p>
           <p>Availability: Open for freelance and full-time opportunities</p>
         </div>
         <div className="flex gap-4 justify-center">
@@ -311,7 +307,7 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="py-10 text-neutral-600 text-sm">
-        ? {new Date().getFullYear()} Samuel Oluwaseun? Built with Next.js & TailwindCSS
+      {new Date().getFullYear()} Samuel Oluwaseun Built with Next.js & TailwindCSS
       </footer>
     </main>
   );
