@@ -117,18 +117,36 @@ export default function Home() {
           {[
             {
               title: "Data",
-              items: ["Excel", "SQL"],
+              items: [
+                { name: "Excel", icon: "/icons/tool.svg" },
+                { name: "SQL", icon: "/icons/tool.svg" },
+              ],
             },
             {
               title: "Development",
-              items: ["Django", "React", "Next.js", "TypeScript", "REST APIs"],
+              items: [
+                { name: "Django", icon: "/icons/tool.svg" },
+                { name: "React", icon: "/icons/tool.svg" },
+                { name: "Next.js", icon: "/icons/tool.svg" },
+                { name: "TypeScript", icon: "/icons/tool.svg" },
+                { name: "REST APIs", icon: "/icons/tool.svg" },
+              ],
             },
           ].map((group, i) => (
             <div key={i} className="card text-left">
               <h3 className="text-xl font-semibold mb-3">{group.title}</h3>
               <ul className="text-sm text-neutral-400 space-y-1">
                 {group.items.map((item) => (
-                  <li key={item}>{item}</li>
+                  <li key={item.name} className="flex items-center gap-2">
+                    <Image
+                      src={item.icon}
+                      alt=""
+                      width={16}
+                      height={16}
+                      className="opacity-70"
+                    />
+                    <span>{item.name}</span>
+                  </li>
                 ))}
               </ul>
             </div>
@@ -307,7 +325,7 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="py-10 text-neutral-600 text-sm">
-      {new Date().getFullYear()} Samuel Oluwaseun Built with Next.js & TailwindCSS
+        ? {new Date().getFullYear()} Samuel Oluwaseun ? Built with Next.js & TailwindCSS
       </footer>
     </main>
   );
