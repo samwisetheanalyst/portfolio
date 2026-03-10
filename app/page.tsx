@@ -43,7 +43,7 @@ export default function Home() {
             </a>
           </div>
           <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-neutral-400">
-            <span>Data Analyst | Full-Stack Developer</span>
+            <span>Data Analyst || Full-Stack Developer || Writer</span>
             <span>5+ Projects Delivered</span>
             <span>2+ Years Building</span>
           </div>
@@ -220,7 +220,7 @@ export default function Home() {
                 "Built a notification pipeline for event reminders and announcements.",
                 "Designed user flows for posts, comments, and mentions.",
               ],
-              link: "github.com/samwisetheanalyst/k-de",
+              link: "https://github.com/samwisetheanalyst/k-de",
             },
             {
               title: "E-commerce Platform",
@@ -231,7 +231,7 @@ export default function Home() {
                 "Implemented product catalog and cart experience.",
                 "Integrated checkout with local payment rails.",
               ],
-              link: "github.com/samwisetheanalyst/clothing-store",
+              link: "https://github.com/samwisetheanalyst/clothing-store",
             },
             {
               title: "Portfolio Website",
@@ -325,7 +325,7 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="py-10 text-neutral-600 text-sm">
-        ? {new Date().getFullYear()} Samuel Oluwaseun ? Built with Next.js & TailwindCSS
+        © {new Date().getFullYear()} Samuel Oluwaseun · Built with Next.js & TailwindCSS
       </footer>
     </main>
   );
