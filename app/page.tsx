@@ -16,7 +16,7 @@ export default function Home() {
           {/* Profile Picture */}
           <div className="relative w-36 h-36 rounded-full overflow-hidden border border-neutral-700 shadow-lg">
             <Image
-              src="/profile.jpg" // Place in /public/profile.jpg
+              src="/profile.jpeg" // Place in /public/profile.jpeg
               alt="Samuel's Profile Picture"
               fill
               priority
@@ -231,7 +231,7 @@ export default function Home() {
                 "Implemented product catalog and cart experience.",
                 "Integrated checkout with local payment rails.",
               ],
-              link: "https://github.com/samwisetheanalyst/clothing-store",
+              link: "https://github.com/samwisetheanalyst/oge",
             },
             {
               title: "Portfolio Website",
