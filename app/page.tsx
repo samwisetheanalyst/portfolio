@@ -28,11 +28,12 @@ export default function Home() {
             <h1 className="text-5xl md:text-6xl font-serif italic tracking-tight">
               Hello, I'm Samuel
             </h1>
-            <p className="text-neutral-400 mt-4 max-w-md mx-auto text-base leading-relaxed">
-              A data analyst, and developer blending logic and design to craft digital experiences that feel alive.
-            </p>
           </div>
-
+           <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-neutral-400">
+            <span>Data Analyst || Full-Stack Developer || Writer</span>
+            <span>5+ Projects Delivered</span>
+            <span>2+ Years Building</span>
+          </div>
           <div className="flex gap-4 mt-4">
             <a href="#projects" className="button">View Projects</a>
             <a
@@ -42,11 +43,7 @@ export default function Home() {
               Contact Me
             </a>
           </div>
-          <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-neutral-400">
-            <span>Data Analyst || Full-Stack Developer || Writer</span>
-            <span>5+ Projects Delivered</span>
-            <span>2+ Years Building</span>
-          </div>
+         
         </motion.div>
       </section>
 
